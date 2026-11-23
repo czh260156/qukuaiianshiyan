@@ -1,0 +1,316 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  color: #242432;
+  background: #f7f7fb;
+  font-family: 'Noto Sans SC', 'Microsoft YaHei', -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-layout {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.dingbutoubu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  padding-inline: 30px;
+  border-bottom: 1px solid #ececf3;
+  background: rgba(251, 251, 253, 0.94) !important;
+  color: #302e3b;
+  font-size: 15px;
+  font-weight: 600;
+  backdrop-filter: blur(12px);
+}
+
+.neirongquyu {
+  min-height: 0;
+  overflow-y: auto;
+  background:
+    radial-gradient(circle at 75% -20%, rgba(101, 88, 245, 0.045), transparent 35%),
+    #f7f7fb;
+}
+
+.page-shell {
+  width: 100%;
+  max-width: 1460px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 28px 32px 48px;
+}
+
+.app-sider {
+  border-right: 1px solid #ececf3;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-sider .ant-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.brand-area {
+  min-height: 74px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+.brand-logo {
+  border-radius: 11px !important;
+  box-shadow: 0 6px 16px rgba(101, 88, 245, 0.2);
+}
+
+.micro-text {
+  font-size: 10px;
+}
+
+.sider-menu {
+  flex: 1;
+  overflow-y: auto;
+  border-inline-end: 0 !important;
+}
+
+.sider-menu .ant-menu-item-group-title {
+  padding-top: 16px !important;
+  color: #a6a4b2 !important;
+  font-size: 9px !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sider-menu .ant-menu-item-selected {
+  font-weight: 600;
+}
+
+.semester-button {
+  width: auto !important;
+  height: auto !important;
+  margin: 12px 14px !important;
+  padding: 12px !important;
+  border: 1px solid #ebe8ff !important;
+  background: #f8f7ff !important;
+  text-align: left !important;
+}
+
+.sider-footer {
+  flex-shrink: 0;
+  padding: 10px 12px 16px;
+  border-top: 1px solid #f0f0f5;
+}
+
+.sider-footer .ant-btn {
+  justify-content: flex-start;
+}
+
+.profile-summary {
+  overflow: hidden;
+  padding: 8px;
+  border-radius: 9px;
+  background: #f8f8fb;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 72px;
+  padding-inline: 28px;
+  border-bottom: 1px solid #ececf2;
+  background: rgba(251, 251, 253, 0.92) !important;
+  backdrop-filter: blur(12px);
+}
+
+.header-search {
+  width: min(300px, 28vw);
+}
+
+.header-search .ant-tag {
+  margin: 0;
+  color: #9996a8;
+  font-size: 9px;
+}
+
+.notification-panel .ant-list-item,
+.search-result,
+.calendar-upcoming-item {
+  padding: 9px 4px !important;
+  cursor: pointer;
+}
+
+.notification-panel .ant-list-item:hover,
+.search-result:hover,
+.calendar-upcoming-item:hover {
+  background: #fafaff;
+}
+
+.app-content {
+  min-height: 0;
+  overflow-y: auto;
+  background: #f7f7fb;
+}
+
+.page-shell {
+  width: 100%;
+  max-width: 1460px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 28px 32px 46px;
+}
+
+.eyebrow {
+  color: #9693a6 !important;
+  font-size: 9px !important;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.page-shell .ant-typography h2,
+.page-shell h2.ant-typography {
+  margin-top: 0;
+}
+
+.page-shell .ant-card {
+  box-shadow: 0 2px 10px rgba(30, 27, 60, 0.025);
+}
+
+.page-shell .ant-list-item {
+  padding-inline: 4px;
+}
+
+.page-shell .ant-card-head {
+  min-height: 52px;
+  border-bottom-color: #f0f0f5;
+}
+
+.page-shell .ant-card-head-title {
+  font-size: 14px;
+}
+
+.projects-page .project-toolbar-card .ant-card-body {
+  padding: 12px 16px;
+}
+
+.projects-page .project-search {
+  width: 220px;
+}
+
+.projects-page .project-card {
+  height: 100%;
+  border-color: #e9e8f0;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.projects-page .project-card:hover {
+  border-color: #d5d0fb;
+  box-shadow: 0 14px 32px rgba(39, 33, 88, 0.08);
+  transform: translateY(-3px);
+}
+
+.projects-page .project-card .ant-card-head {
+  align-items: flex-start;
+}
+
+.projects-page .project-card .ant-card-head-title {
+  min-width: 0;
+  white-space: normal;
+}
+
+.projects-page .project-description {
+  min-height: 44px;
+  margin: 0;
+}
+
+.projects-page .project-folder {
+  padding: 7px 0 8px;
+  border-top: 1px solid #f1f0f5;
+  border-bottom: 1px solid #f1f0f5;
+}
+
+.projects-page .project-folder .ant-btn {
+  flex-shrink: 0;
+}
+
+.dashboard-stat-card {
+  min-height: 118px;
+}
+
+.dashboard-stat-card .ant-statistic-title {
+  color: #888596;
+  font-size: 12px;
+}
+
+.dashboard-stat-card .ant-statistic-content {
+  margin-top: 8px;
+  font-size: 28px;
+}
+
+.dashboard-tip-card {
+  background: #f7f5ff !important;
+  border: 1px solid #e8e3ff !important;
+}
+
+.calendar-task-tag {
+  display: block;
+  overflow: hidden;
+  margin: 0 !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 9px;
+}
+
+.page-shell .ant-calendar {
+  border-inline-start: 0;
+}
+
+.page-shell .ant-picker-calendar-date-content {
+  height: 54px;
+  overflow: hidden;
+}
+
+@media (max-width: 860px) {
+  .page-shell {
+    padding: 22px 18px 38px;
+  }
+
+  .app-header {
+    padding-inline: 16px;
+  }
+
+  .header-search {
+    display: none;
+  }
+
+  .dingbutoubu {
+    padding-inline: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .page-shell {
+    padding-inline: 13px;
+  }
+
+  .app-header > .ant-space {
+    gap: 0 !important;
+  }
+
+  .projects-page .project-search {
+    width: 100%;
+  }
+}
